@@ -11,9 +11,6 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by jt on 5/16/17.
- */
 @Component
 public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
