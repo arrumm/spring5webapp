@@ -58,5 +58,8 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 
         authorRepository.save(rod);
         bookRepository.save(noEJB);
+
+        System.out.println("Publishers: " + publisherRepository.count());
+
     }
 }
