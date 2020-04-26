@@ -12,7 +12,7 @@ public class Book {
     private String title;
     private String isbn;
 
-    @OneToOne
+    @ManyToOne
     private Publisher publisher;
 
     @ManyToMany
@@ -35,6 +35,8 @@ public class Book {
         this.publisher = publisher;
         this.authors = authors;
     }
+
+
 
     public Long getId() {
         return id;
